@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function PokemonCard({ pokemon }) {
+function PokemonCard({pokemon, name, imgSrc}) {
     return <figure><figcaption>{pokemon.name}</figcaption>{pokemon.imgSrc !== undefined ? <img src={pokemon.imgSrc} alt={pokemon.name} /> : <p>???</p>}</figure>
 }
 
